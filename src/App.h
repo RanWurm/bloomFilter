@@ -1,15 +1,16 @@
 //
-// Created by user on 1/16/2024.
+// Created by user on 1/17/2024.
 //
 
 #ifndef PROJECT_PT1_APP_H
 #define PROJECT_PT1_APP_H
 #include "Runable.h"
+#include "dumAuthinticator.h"
+#include "DataProcessor.h"
 
-class App :	public Runable{
-
-
-
+class App : public Runable{
+public:
+	const void run() override;
 };
 
 

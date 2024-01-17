@@ -1,5 +1,5 @@
 //
-// Created by user on 1/16/2024.
+// Created by user on 1/17/2024.
 //
 
 #ifndef PROJECT_PT1_RUNABLE_H
@@ -8,7 +8,8 @@
 
 class Runable {
 
-	virtual void execute() = 0;
+public:
+	virtual void const run() = 0;
 };
 
 
