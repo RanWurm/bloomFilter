@@ -1,0 +1,4 @@
+C:/Users/user/Desktop/OneDrive/c projects/Project_pt1/cmake-build-debug/CMakeFiles/CalcTests.dir
+C:/Users/user/Desktop/OneDrive/c projects/Project_pt1/cmake-build-debug/CMakeFiles/test.dir
+C:/Users/user/Desktop/OneDrive/c projects/Project_pt1/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/OneDrive/c projects/Project_pt1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
