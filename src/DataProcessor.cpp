@@ -3,7 +3,7 @@
 //
 
 #include "DataProcessor.h"
-#include <iostream>
+
 using namespace std;
 
 DataProcessor::DataProcessor() : s(0){}
@@ -14,17 +14,19 @@ void DataProcessor::collectUserData() {
 	s = userInput;
 }
 
-string DataProcessor::giveUserDate() {
+string DataProcessor::getUserDate() {
 	return s;
 }
 
-int DataProcessor::countSpaces(std::string s) {
-	int cnt = 0;
-	for(int i = 0; i<s.size(); i++){
-		if(s[i] = ' '){
-			cnt++;
-		}
-	}
-	return cnt;
+std::vector <std::string> getSeperatedStrings (std::string& input, char delim){
+
+std::istringstream iss(input);
+std::vector<std::string> seperatedInput;
+std::string part;
+
+while(std::getline(iss,part,delim)){
+	seperatedInput.push_back(part);
+}
+return seperatedInput;
 }
 

@@ -5,6 +5,9 @@
 #ifndef PROJECT_PT1_DATAPROCESSOR_H
 #define PROJECT_PT1_DATAPROCESSOR_H
 #include <string>
+#include <sstream>
+#include <vector>
+#include <iostream>
 
 class DataProcessor {
 private:
@@ -13,8 +16,8 @@ private:
 public:
 	DataProcessor();
 	void collectUserData();
-	std::string giveUserDate();
-	int countSpaces(std::string s);
+	std::string getUserDate();
+	std::vector <std::string> getSeperatedStrings(std::string& input, char delim);
 	
 
 };

@@ -6,11 +6,11 @@
 
 dumAuthinticator::dumAuthinticator() {}
 
-bool dumAuthinticator::initAuthi(std::string s) {
+bool dumAuthinticator::initAuthi(std::vector<std::string> s) {
 	
 	return true;
 }
 
-bool dumAuthinticator::urlAuthi(std::string s) {
+bool dumAuthinticator::urlAuthi(std::vector<std::string> s) {
 	return true;
 }

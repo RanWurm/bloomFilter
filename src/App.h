@@ -7,6 +7,10 @@
 #include "Runable.h"
 #include "dumAuthinticator.h"
 #include "DataProcessor.h"
+#include <string>
+#include <sstream>
+#include <vector>
+#include <iostream>
 
 class App : public Runable{
 public:

@@ -5,12 +5,15 @@
 #ifndef PROJECT_PT1_DUMAUTHINTICATOR_H
 #define PROJECT_PT1_DUMAUTHINTICATOR_H
 #include <string>
+#include <sstream>
+#include <vector>
+#include <iostream>
 
 class dumAuthinticator {
 public:
 	dumAuthinticator();
-	bool initAuthi(std::string s);
-	bool urlAuthi(std::string s);
+	bool initAuthi(std::vector<std::string> s);
+	bool urlAuthi(std::vector<std::string> s);
 };
 
 
