@@ -21,7 +21,12 @@ std::vector <std::string> DataProcessor:: getSeperatedStrings (std::string& inpu
 	std::string part;
 	
 	while(std::getline(iss,part,delim)){
-		seperatedInput.push_back(part);
+        if(part == " "){
+            continue;
+        } else {
+            seperatedInput.push_back(part);
+        }
+
 	}
 	return seperatedInput;
 }

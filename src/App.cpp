@@ -14,7 +14,6 @@ void App::run() {
 	std::vector<std::string> seperatedWords;
 	std::string tmpDataForBloom;
 	std::vector<int> valuesForBloom;
-    BloomFilter myBloom = BloomFilter();
 	std::cout<<"pre init"<<std::endl;
 	
 	//this get data from user via processor,and loop untill the data is valid
@@ -32,7 +31,10 @@ void App::run() {
 		valuesForBloom = processor.getVectorOfInts(seperatedWords);
 		validInit = auth.initAuthi(valuesForBloom);
 	}
-    myBloom.setArray(valuesForBloom[0]);
+    int arrSize = valuesForBloom[0];
+    seperatedWords.erase(seperatedWords.begin());
+    std::vector<int> bloomInts = processor.getVectorOfInts(seperatedWords);
+    BloomFilter myBloom = BloomFilter(arrSize,&bloomInts);
 	std::cout<<"init was good"<<std::endl;
 	
 	//this loop is after the init is done.

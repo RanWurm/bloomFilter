@@ -2,15 +2,21 @@
 // Created by hillel on 1/17/24.
 //
 #include "BloomFilter.h"
+#include <list>
 using namespace std;
 
-BloomFilter::BloomFilter() : bloomArray(nullptr), arraySize(0){
-//constructor
+
+BloomFilter::BloomFilter(int arraySize ,vector<int> &hashFunctions) : bloomArray(nullptr), arraySize(0){
+    setArray(arraySize);
+    setHashArray(hashFunctions);
+
 }
+
 
 BloomFilter::~BloomFilter(){
     //destructor
     delete[] bloomArray;
+
 }
 
 void BloomFilter::setArray(int newSize) {
@@ -22,37 +28,59 @@ void BloomFilter::setArray(int newSize) {
     }
 }
 
-size_t BloomFilter::hashNum(string url, int hashes){
-    //gets the proper hash given the url and number of hashes needed to be done
-    size_t h1 = hash<string>{}(url);
-    for(int i = 0; i < hashes - 1; i++) {
-        h1 = hash<string>{}(to_string(h1));
-    }
-    return h1;
-}
+// this put flag in array for the given url
+void BloomFilter::putFlagInArray(string url) {
+    for(int i = 0; i < hashFunctions.size();i++){
+        string toIterate = to_string(hashFunctions[i].doHash(url));
+        int index = (stoi(toIterate)) % arraySize;
 
-void BloomFilter::addToArr(string url, int hashes) {
-    //flags the proper index in the bloom filter array
-    size_t h1 = hashNum(url, hashes);
-    bloomArray[h1 % arraySize] = 1;
-}
-
-void BloomFilter::addToMap(const string& url, int hashes) {
-    //adds the url to the map, together with how many hashes were done when added
-    bloomMap[url] = hashes;
-}
-
-int BloomFilter::isBlack(string url) {
-    size_t h1 = hashNum(url, bloomMap[url]);
-    //if there is a 0 in the array it wasn't added
-    if (bloomArray[h1 % arraySize] == 0) {
-        return 0;
-    }
-    //check for false positive
-    for (const auto& pair : bloomMap) {
-        if(pair.first.compare(url) == 0) {
-            return 1;
+        if(bloomArray[index]== 1){
+            continue;
+        } else{
+            bloomArray[stoi(toIterate) % arraySize] = 1;
         }
     }
-    return 0;
 }
+
+//add to black list
+void BloomFilter::addToBlackList(std::string url) {
+    //first we need to put a flag in the array, flag is 0 or 1
+    putFlagInArray(url);
+    //we check if we already put this url in the black list,if not we put it
+    if(isBlackListed(url)){
+        return;
+    } else{
+        blackList.push_back(url);
+    }
+}
+
+//this will check if false positive
+bool BloomFilter::isBlackListed(std::string url) {
+    if(blackList.empty()){
+        return false;
+    }else{
+        for(int i = 0; i <blackList.size(); i++){
+            if(url == blackList[i]){
+                return true;
+            }
+        }
+        return false;
+    }
+
+}
+
+int BloomFilter::getArraySize() {
+    return arraySize;
+}
+
+void BloomFilter::setHashArray(vector<int> hashNames) {
+    for(int i = 0; i < hashNames.size(); i++){
+        hash<string> tmphash {};
+        StandardHash tmpHash = StandardHash(tmphash, hashNames[i]);
+    }
+
+}
+
+
+
+

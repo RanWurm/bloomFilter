@@ -7,24 +7,31 @@
 #include <map>
 #include <string>
 #include <vector>
+#include <functional>
+#include "StandardHash.h"
 
 using namespace std;
 class BloomFilter {
 private:
     int* bloomArray;
     int arraySize;
-    map<string, int> bloomMap;
+    vector<StandardHash> hashFunctions;
+    vector<string> blackList;
+
+
 public:
-    BloomFilter();
+    BloomFilter(int arraySize,vector<int>& hashFunctions);
     ~BloomFilter();
 
     void setArray(int newSize);
-    void addToArr(string url, int hashes);
-    void addToMap(const std::string& url, int hashes);
-    size_t hashNum(string url, int hashes);
-    int isBlack(string url);
-};
+    void addToBlackList(string url);
+    void putFlagInArray(string url);
+    int getArraySize();
 
+private:
+    void setHashArray(vector<int> hashNames);
+    bool isBlackListed(string url);
+};
 
 
 #endif //PROJECT_PT1_BLOOMFILTER_H
