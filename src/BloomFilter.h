@@ -15,7 +15,7 @@ private:
     int arraySize;
     map<string, int> bloomMap;
 public:
-    BloomFilter(vector<int> values);
+    BloomFilter();
     ~BloomFilter();
 
     void setArray(int newSize);

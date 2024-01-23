@@ -4,8 +4,8 @@
 #include "BloomFilter.h"
 using namespace std;
 
-BloomFilter::BloomFilter(vector<int> values) : bloomArray(nullptr), arraySize(0){
-
+BloomFilter::BloomFilter() : bloomArray(nullptr), arraySize(0){
+//constructor
 }
 
 BloomFilter::~BloomFilter(){
