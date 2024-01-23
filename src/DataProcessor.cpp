@@ -44,6 +44,6 @@ std::vector<int> DataProcessor:: getVectorOfInts(std::vector<std::string> string
 			ints.clear();
 			return ints;
 		}
-		return ints;
 	}
+    return ints;
 }

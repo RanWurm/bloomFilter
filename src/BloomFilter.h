@@ -20,17 +20,18 @@ private:
 
 
 public:
-    BloomFilter(int arraySize,vector<int>& hashFunctions);
+    BloomFilter(int arraySize,vector<int> hashFunctions);
     ~BloomFilter();
 
     void setArray(int newSize);
     void addToBlackList(string url);
     void putFlagInArray(string url);
     int getArraySize();
+    bool isBlackListed(string url);
 
 private:
     void setHashArray(vector<int> hashNames);
-    bool isBlackListed(string url);
+
 };
 
 

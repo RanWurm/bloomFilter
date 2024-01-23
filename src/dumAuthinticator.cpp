@@ -3,7 +3,7 @@
 dumAuthinticator::dumAuthinticator() {}
 
 bool dumAuthinticator::initAuthi(std::vector<int> ints) {
-	if(ints.empty()){
+	if(ints.size() < 2){
 		return false;
 	} else{
 		return true;
@@ -11,11 +11,17 @@ bool dumAuthinticator::initAuthi(std::vector<int> ints) {
 }
 
 bool dumAuthinticator::urlAuthi(std::vector<std::string> s) {
-	if(s.empty()){
-		return false;
-	}
-	if(s[0] != "wwww"){
-		return false;
-	}
-	return true;
+	if(s.empty()) {
+        return false;
+    }else{
+	    return true;
+    }
+}
+
+bool dumAuthinticator:: formAuth(int form) {
+    if(form == 1 || form == 2){
+        return true;
+    }else {
+        return false;
+    }
 }

@@ -6,9 +6,9 @@
 using namespace std;
 
 
-BloomFilter::BloomFilter(int arraySize ,vector<int> &hashFunctions) : bloomArray(nullptr), arraySize(0){
+BloomFilter::BloomFilter(int arraySize ,vector<int> hashNames) : bloomArray(nullptr), arraySize(0){
     setArray(arraySize);
-    setHashArray(hashFunctions);
+    setHashArray(hashNames);
 
 }
 
@@ -77,6 +77,7 @@ void BloomFilter::setHashArray(vector<int> hashNames) {
     for(int i = 0; i < hashNames.size(); i++){
         hash<string> tmphash {};
         StandardHash tmpHash = StandardHash(tmphash, hashNames[i]);
+        hashFunctions.push_back(tmpHash);
     }
 
 }

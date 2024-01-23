@@ -16,6 +16,7 @@ public:
 	dumAuthinticator();
 	bool initAuthi(std::vector<int> s);
 	bool urlAuthi(std::vector<std::string> s);
+    bool formAuth(int form);
 };
 
 

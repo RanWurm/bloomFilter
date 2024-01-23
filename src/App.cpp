@@ -34,7 +34,7 @@ void App::run() {
     int arrSize = valuesForBloom[0];
     seperatedWords.erase(seperatedWords.begin());
     std::vector<int> bloomInts = processor.getVectorOfInts(seperatedWords);
-    BloomFilter myBloom = BloomFilter(arrSize,&bloomInts);
+    BloomFilter myBloom = BloomFilter(arrSize,bloomInts);
 	std::cout<<"init was good"<<std::endl;
 	
 	//this loop is after the init is done.
@@ -42,14 +42,21 @@ void App::run() {
 		processor.collectUserData();
 		//this in the first data
 		tmpDataForBloom = processor.getUserDate();
-		std::vector<std::string> seperatedUrl = processor.getSeperatedStrings(tmpDataForBloom,'.');
+		std::vector<std::string> seperatedUrl = processor.getSeperatedStrings(tmpDataForBloom,' ');
+        int form = stoi(seperatedUrl[0]);
+        seperatedUrl.erase(seperatedUrl.begin());
 		//this will check if the input is valid
-		if(auth.urlAuthi(seperatedUrl)){
+		if(auth.formAuth(form)){
+            //if 1 is pressed we want to add url to black list,if 2 we want to print if url is in list
+            if(form == 1){
+                myBloom.addToBlackList(seperatedUrl[0]);
+            } else{
+                std::cout<<myBloom.isBlackListed(seperatedUrl[0])<<std::endl;
+            }
 			//send data to bloom
-			
-		}else{
-			continue;
 		}
+        tmpDataForBloom.clear();
+        seperatedUrl.clear();
 	}
 	
 	
