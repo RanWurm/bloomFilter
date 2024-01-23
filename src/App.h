@@ -5,7 +5,7 @@
 #ifndef PROJECT_PT1_APP_H
 #define PROJECT_PT1_APP_H
 
-
+#include "BloomFilter.h"
 #include "dumAuthinticator.h"
 #include "DataProcessor.h"
 #include <string>

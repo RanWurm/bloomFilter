@@ -4,6 +4,7 @@
 
 
 void DataProcessor::collectUserData() {
+    std::cout<<"enter data plz"<<std::endl;
 	std::string userInput;
 	getline(std::cin,userInput);
 	s = userInput;

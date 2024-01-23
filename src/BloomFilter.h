@@ -6,6 +6,8 @@
 #define PROJECT_PT1_BLOOMFILTER_H
 #include <map>
 #include <string>
+#include <vector>
+
 using namespace std;
 class BloomFilter {
 private:
@@ -13,7 +15,7 @@ private:
     int arraySize;
     map<string, int> bloomMap;
 public:
-    BloomFilter();
+    BloomFilter(vector<int> values);
     ~BloomFilter();
 
     void setArray(int newSize);
@@ -22,7 +24,7 @@ public:
     size_t hashNum(string url, int hashes);
     int isBlack(string url);
 };
-};
+
 
 
 #endif //PROJECT_PT1_BLOOMFILTER_H
