@@ -139,6 +139,178 @@ FilterTests/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/build
 .PHONY : FilterTests/fast
 
+#=============================================================================
+# Target rules for targets named FilterApp
+
+# Build rule for target.
+FilterApp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FilterApp
+.PHONY : FilterApp
+
+# fast build rule for target.
+FilterApp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/build
+.PHONY : FilterApp/fast
+
+src/App.o: src/App.cpp.o
+.PHONY : src/App.o
+
+# target to build an object file
+src/App.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/App.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/App.cpp.o
+.PHONY : src/App.cpp.o
+
+src/App.i: src/App.cpp.i
+.PHONY : src/App.i
+
+# target to preprocess a source file
+src/App.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/App.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/App.cpp.i
+.PHONY : src/App.cpp.i
+
+src/App.s: src/App.cpp.s
+.PHONY : src/App.s
+
+# target to generate assembly for a file
+src/App.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/App.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/App.cpp.s
+.PHONY : src/App.cpp.s
+
+src/BloomFilter.o: src/BloomFilter.cpp.o
+.PHONY : src/BloomFilter.o
+
+# target to build an object file
+src/BloomFilter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomFilter.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomFilter.cpp.o
+.PHONY : src/BloomFilter.cpp.o
+
+src/BloomFilter.i: src/BloomFilter.cpp.i
+.PHONY : src/BloomFilter.i
+
+# target to preprocess a source file
+src/BloomFilter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomFilter.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomFilter.cpp.i
+.PHONY : src/BloomFilter.cpp.i
+
+src/BloomFilter.s: src/BloomFilter.cpp.s
+.PHONY : src/BloomFilter.s
+
+# target to generate assembly for a file
+src/BloomFilter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomFilter.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomFilter.cpp.s
+.PHONY : src/BloomFilter.cpp.s
+
+src/DataProcessor.o: src/DataProcessor.cpp.o
+.PHONY : src/DataProcessor.o
+
+# target to build an object file
+src/DataProcessor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/DataProcessor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/DataProcessor.cpp.o
+.PHONY : src/DataProcessor.cpp.o
+
+src/DataProcessor.i: src/DataProcessor.cpp.i
+.PHONY : src/DataProcessor.i
+
+# target to preprocess a source file
+src/DataProcessor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/DataProcessor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/DataProcessor.cpp.i
+.PHONY : src/DataProcessor.cpp.i
+
+src/DataProcessor.s: src/DataProcessor.cpp.s
+.PHONY : src/DataProcessor.s
+
+# target to generate assembly for a file
+src/DataProcessor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/DataProcessor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/DataProcessor.cpp.s
+.PHONY : src/DataProcessor.cpp.s
+
+src/StandardHash.o: src/StandardHash.cpp.o
+.PHONY : src/StandardHash.o
+
+# target to build an object file
+src/StandardHash.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/StandardHash.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/StandardHash.cpp.o
+.PHONY : src/StandardHash.cpp.o
+
+src/StandardHash.i: src/StandardHash.cpp.i
+.PHONY : src/StandardHash.i
+
+# target to preprocess a source file
+src/StandardHash.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/StandardHash.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/StandardHash.cpp.i
+.PHONY : src/StandardHash.cpp.i
+
+src/StandardHash.s: src/StandardHash.cpp.s
+.PHONY : src/StandardHash.s
+
+# target to generate assembly for a file
+src/StandardHash.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/StandardHash.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/StandardHash.cpp.s
+.PHONY : src/StandardHash.cpp.s
+
+src/dumAuthinticator.o: src/dumAuthinticator.cpp.o
+.PHONY : src/dumAuthinticator.o
+
+# target to build an object file
+src/dumAuthinticator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/dumAuthinticator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/dumAuthinticator.cpp.o
+.PHONY : src/dumAuthinticator.cpp.o
+
+src/dumAuthinticator.i: src/dumAuthinticator.cpp.i
+.PHONY : src/dumAuthinticator.i
+
+# target to preprocess a source file
+src/dumAuthinticator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/dumAuthinticator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/dumAuthinticator.cpp.i
+.PHONY : src/dumAuthinticator.cpp.i
+
+src/dumAuthinticator.s: src/dumAuthinticator.cpp.s
+.PHONY : src/dumAuthinticator.s
+
+# target to generate assembly for a file
+src/dumAuthinticator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/dumAuthinticator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/dumAuthinticator.cpp.s
+.PHONY : src/dumAuthinticator.cpp.s
+
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
+
+# target to build an object file
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
+
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
+
+# target to preprocess a source file
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
+
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
+
+# target to generate assembly for a file
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
+
 tests/filter_test.o: tests/filter_test.cpp.o
 .PHONY : tests/filter_test.o
 
@@ -163,30 +335,6 @@ tests/filter_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/filter_test.cpp.s
 .PHONY : tests/filter_test.cpp.s
 
-tests/test_main.o: tests/test_main.cpp.o
-.PHONY : tests/test_main.o
-
-# target to build an object file
-tests/test_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/test_main.cpp.o
-.PHONY : tests/test_main.cpp.o
-
-tests/test_main.i: tests/test_main.cpp.i
-.PHONY : tests/test_main.i
-
-# target to preprocess a source file
-tests/test_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/test_main.cpp.i
-.PHONY : tests/test_main.cpp.i
-
-tests/test_main.s: tests/test_main.cpp.s
-.PHONY : tests/test_main.s
-
-# target to generate assembly for a file
-tests/test_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/test_main.cpp.s
-.PHONY : tests/test_main.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -196,13 +344,29 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... FilterApp"
 	@echo "... FilterTests"
+	@echo "... src/App.o"
+	@echo "... src/App.i"
+	@echo "... src/App.s"
+	@echo "... src/BloomFilter.o"
+	@echo "... src/BloomFilter.i"
+	@echo "... src/BloomFilter.s"
+	@echo "... src/DataProcessor.o"
+	@echo "... src/DataProcessor.i"
+	@echo "... src/DataProcessor.s"
+	@echo "... src/StandardHash.o"
+	@echo "... src/StandardHash.i"
+	@echo "... src/StandardHash.s"
+	@echo "... src/dumAuthinticator.o"
+	@echo "... src/dumAuthinticator.i"
+	@echo "... src/dumAuthinticator.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 	@echo "... tests/filter_test.o"
 	@echo "... tests/filter_test.i"
 	@echo "... tests/filter_test.s"
-	@echo "... tests/test_main.o"
-	@echo "... tests/test_main.i"
-	@echo "... tests/test_main.s"
 .PHONY : help
 
 

@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = /home/ran/CLionProjects/Projectpt1/build
 
 # The main recursive "all" target.
 all: CMakeFiles/FilterTests.dir/all
+all: CMakeFiles/FilterApp.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -72,6 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/FilterTests.dir/clean
+clean: CMakeFiles/FilterApp.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -81,12 +83,12 @@ clean: CMakeFiles/FilterTests.dir/clean
 CMakeFiles/FilterTests.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ran/CLionProjects/Projectpt1/build/CMakeFiles --progress-num=1,2,3 "Built target FilterTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ran/CLionProjects/Projectpt1/build/CMakeFiles --progress-num=8,9,10,11,12,13,14 "Built target FilterTests"
 .PHONY : CMakeFiles/FilterTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FilterTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ran/CLionProjects/Projectpt1/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ran/CLionProjects/Projectpt1/build/CMakeFiles 7
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FilterTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ran/CLionProjects/Projectpt1/build/CMakeFiles 0
 .PHONY : CMakeFiles/FilterTests.dir/rule
@@ -99,6 +101,32 @@ FilterTests: CMakeFiles/FilterTests.dir/rule
 CMakeFiles/FilterTests.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/clean
 .PHONY : CMakeFiles/FilterTests.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/FilterApp.dir
+
+# All Build rule for target.
+CMakeFiles/FilterApp.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ran/CLionProjects/Projectpt1/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target FilterApp"
+.PHONY : CMakeFiles/FilterApp.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/FilterApp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ran/CLionProjects/Projectpt1/build/CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FilterApp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ran/CLionProjects/Projectpt1/build/CMakeFiles 0
+.PHONY : CMakeFiles/FilterApp.dir/rule
+
+# Convenience name for target.
+FilterApp: CMakeFiles/FilterApp.dir/rule
+.PHONY : FilterApp
+
+# clean rule for target.
+CMakeFiles/FilterApp.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/clean
+.PHONY : CMakeFiles/FilterApp.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
