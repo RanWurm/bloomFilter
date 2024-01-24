@@ -26,8 +26,9 @@ public:
     void setArray(int newSize);
     void addToBlackList(string url);
     void putFlagInArray(string url);
-    int getArraySize();
     bool isBlackListed(string url);
+    void printIfBlackListed(string url);
+    int getIndex(string url, StandardHash h);
 
 private:
     void setHashArray(vector<int> hashNames);

@@ -12,7 +12,3 @@ StandardHash::StandardHash(std::hash<std::string> &hash,int id) {
 size_t StandardHash:: doHash(std::string s)  {
     return myHash(s);
 }
-
-int StandardHash::getId() {
-    return id;
-}

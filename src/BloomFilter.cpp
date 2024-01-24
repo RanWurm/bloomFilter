@@ -5,18 +5,14 @@
 #include <list>
 using namespace std;
 
-
 BloomFilter::BloomFilter(int arraySize ,vector<int> hashNames) : bloomArray(nullptr), arraySize(0){
     setArray(arraySize);
     setHashArray(hashNames);
-
 }
-
 
 BloomFilter::~BloomFilter(){
     //destructor
     delete[] bloomArray;
-
 }
 
 void BloomFilter::setArray(int newSize) {
@@ -31,12 +27,16 @@ void BloomFilter::setArray(int newSize) {
 // this put flag in array for the given url
 void BloomFilter::putFlagInArray(string url) {
     for (int i = 0; i < hashFunctions.size(); i++) {
-        string toIterate = to_string(hashFunctions[i].doHash(url));
-        size_t index = (std::stoul(toIterate)) % arraySize;
+        int index = getIndex(url,hashFunctions[i]);
         bloomArray[index] = 1;
     }
 }
 
+int BloomFilter::getIndex(string url,StandardHash h) {
+    string toIterate = to_string(h.doHash(url));
+    size_t index = (std::stoul(toIterate)) % arraySize;
+    return index;
+}
 
 //add to black list
 void BloomFilter::addToBlackList(std::string url) {
@@ -53,23 +53,31 @@ void BloomFilter::addToBlackList(std::string url) {
 //this will check if false positive
 bool BloomFilter::isBlackListed(std::string url) {
     if(blackList.empty()){
-        std::cout<<"false"<<std::endl;
         return false;
     }else{
         for(int i = 0; i <blackList.size(); i++){
             if(url == blackList[i]){
-                std::cout<<"true"<<std::endl;
                 return true;
             }
         }
-        std::cout<<"false"<<std::endl;
         return false;
     }
-
 }
 
-int BloomFilter::getArraySize() {
-    return arraySize;
+void BloomFilter::printIfBlackListed(std::string url) {
+    for (int i = 0; i < hashFunctions.size(); i++){
+        int index = getIndex(url,hashFunctions[i]);
+        if( bloomArray[index] == 0 ){
+            cout<<"false"<<endl;
+            return;
+        }
+    }
+    cout<<"true ";
+    if(isBlackListed(url)){
+        cout<<"true"<<endl;
+    } else{
+        cout<<"false"<<endl;
+    }
 }
 
 void BloomFilter::setHashArray(vector<int> hashNames) {
@@ -78,7 +86,6 @@ void BloomFilter::setHashArray(vector<int> hashNames) {
         StandardHash tmpHash = StandardHash(tmphash, hashNames[i]);
         hashFunctions.push_back(tmpHash);
     }
-
 }
 
 

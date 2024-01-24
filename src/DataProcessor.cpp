@@ -1,10 +1,6 @@
 #include "DataProcessor.h"
 
-
-
-
 void DataProcessor::collectUserData() {
-    std::cout<<"enter data plz"<<std::endl;
 	std::string userInput;
 	getline(std::cin,userInput);
 	s = userInput;
@@ -15,7 +11,6 @@ std::string DataProcessor::getUserDate() {
 }
 
 std::vector <std::string> DataProcessor:: getSeparatedStrings (std::string& input, char delim){
-	
 	std::istringstream iss(input);
 	std::vector<std::string> seperatedInput;
 	std::string part;
@@ -46,4 +41,8 @@ std::vector<int> DataProcessor:: getVectorOfInts(std::vector<std::string> string
 		}
 	}
     return ints;
+}
+
+void DataProcessor::clearData() {
+    s.clear();
 }
