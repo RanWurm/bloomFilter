@@ -14,13 +14,13 @@ std::string DataProcessor::getUserDate() {
 	return s;
 }
 
-std::vector <std::string> DataProcessor:: getSeperatedStrings (std::string& input, char delim){
+std::vector <std::string> DataProcessor:: getSeparatedStrings (std::string& input, char delim){
 	
 	std::istringstream iss(input);
 	std::vector<std::string> seperatedInput;
 	std::string part;
-	
-	while(std::getline(iss,part,delim)){
+    //
+	while(std::getline(iss>>std::ws,part,delim)){
         if(part == " "){
             continue;
         } else {

@@ -30,17 +30,13 @@ void BloomFilter::setArray(int newSize) {
 
 // this put flag in array for the given url
 void BloomFilter::putFlagInArray(string url) {
-    for(int i = 0; i < hashFunctions.size();i++){
+    for (int i = 0; i < hashFunctions.size(); i++) {
         string toIterate = to_string(hashFunctions[i].doHash(url));
-        int index = (stoi(toIterate)) % arraySize;
-
-        if(bloomArray[index]== 1){
-            continue;
-        } else{
-            bloomArray[stoi(toIterate) % arraySize] = 1;
-        }
+        size_t index = (std::stoul(toIterate)) % arraySize;
+        bloomArray[index] = 1;
     }
 }
+
 
 //add to black list
 void BloomFilter::addToBlackList(std::string url) {
@@ -57,13 +53,16 @@ void BloomFilter::addToBlackList(std::string url) {
 //this will check if false positive
 bool BloomFilter::isBlackListed(std::string url) {
     if(blackList.empty()){
+        std::cout<<"false"<<std::endl;
         return false;
     }else{
         for(int i = 0; i <blackList.size(); i++){
             if(url == blackList[i]){
+                std::cout<<"true"<<std::endl;
                 return true;
             }
         }
+        std::cout<<"false"<<std::endl;
         return false;
     }
 

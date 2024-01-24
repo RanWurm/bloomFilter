@@ -1,9 +1,11 @@
 #include "dumAuthinticator.h"
 
 dumAuthinticator::dumAuthinticator() {}
-
+// 1 2 1 2 1 1 1
+//1 1 1 1 1 2 2
+//1 2
 bool dumAuthinticator::initAuthi(std::vector<int> ints) {
-	if(ints.size() < 2){
+	if(ints.size() > 2 || ints.size() <= 0 ){
 		return false;
 	} else{
 		return true;

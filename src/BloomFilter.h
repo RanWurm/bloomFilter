@@ -32,6 +32,7 @@ public:
 private:
     void setHashArray(vector<int> hashNames);
 
+
 };
 
 
