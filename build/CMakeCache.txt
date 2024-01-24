@@ -145,7 +145,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Project_pt1
+CMAKE_PROJECT_NAME:STATIC=Projectpt1
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -223,13 +223,13 @@ FETCHCONTENT_QUIET:BOOL=ON
 FETCHCONTENT_UPDATES_DISCONNECTED:BOOL=OFF
 
 //Value Computed by CMake
-Project_pt1_BINARY_DIR:STATIC=/home/ran/CLionProjects/Projectpt1/build
+Projectpt1_BINARY_DIR:STATIC=/home/ran/CLionProjects/Projectpt1/build
 
 //Value Computed by CMake
-Project_pt1_IS_TOP_LEVEL:STATIC=ON
+Projectpt1_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-Project_pt1_SOURCE_DIR:STATIC=/home/ran/CLionProjects/Projectpt1
+Projectpt1_SOURCE_DIR:STATIC=/home/ran/CLionProjects/Projectpt1
 
 
 ########################

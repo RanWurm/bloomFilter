@@ -106,6 +106,9 @@
 		<Unit filename="/home/ran/CLionProjects/Projectpt1/tests/calc_test.cpp">
 			<Option target="CalcTests"/>
 		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/tests/filter_test.cpp">
+			<Option target="CalcTests"/>
+		</Unit>
 		<Unit filename="/home/ran/CLionProjects/Projectpt1/tests/test_main.cpp">
 			<Option target="CalcTests"/>
 		</Unit>

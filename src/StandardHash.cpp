@@ -4,9 +4,9 @@
 
 #include "StandardHash.h"
 
-StandardHash::StandardHash(std::hash<std::string> &hash,int id) {
+StandardHash::StandardHash(std::hash<std::string>& hash,int name) {
    myHash = hash;
-   id = id;
+   id = name;
 }
 
 size_t StandardHash:: doHash(std::string s)  {

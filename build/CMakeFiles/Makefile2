@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/ran/CLionProjects/Projectpt1/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/CalcTests.dir/all
+all: CMakeFiles/FilterTests.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/CalcTests.dir/clean
+clean: CMakeFiles/FilterTests.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/CalcTests.dir
+# Target rules for target CMakeFiles/FilterTests.dir
 
 # All Build rule for target.
-CMakeFiles/CalcTests.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ran/CLionProjects/Projectpt1/build/CMakeFiles --progress-num=1,2,3,4 "Built target CalcTests"
-.PHONY : CMakeFiles/CalcTests.dir/all
+CMakeFiles/FilterTests.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ran/CLionProjects/Projectpt1/build/CMakeFiles --progress-num=1,2,3 "Built target FilterTests"
+.PHONY : CMakeFiles/FilterTests.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CalcTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ran/CLionProjects/Projectpt1/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CalcTests.dir/all
+CMakeFiles/FilterTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ran/CLionProjects/Projectpt1/build/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/FilterTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/ran/CLionProjects/Projectpt1/build/CMakeFiles 0
-.PHONY : CMakeFiles/CalcTests.dir/rule
+.PHONY : CMakeFiles/FilterTests.dir/rule
 
 # Convenience name for target.
-CalcTests: CMakeFiles/CalcTests.dir/rule
-.PHONY : CalcTests
+FilterTests: CMakeFiles/FilterTests.dir/rule
+.PHONY : FilterTests
 
 # clean rule for target.
-CMakeFiles/CalcTests.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/clean
-.PHONY : CMakeFiles/CalcTests.dir/clean
+CMakeFiles/FilterTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/clean
+.PHONY : CMakeFiles/FilterTests.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

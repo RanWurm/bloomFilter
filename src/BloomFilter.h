@@ -4,11 +4,9 @@
 
 #ifndef PROJECT_PT1_BLOOMFILTER_H
 #define PROJECT_PT1_BLOOMFILTER_H
-#include <map>
-#include <string>
 #include <vector>
-#include <functional>
 #include "StandardHash.h"
+#include <iostream>
 
 using namespace std;
 class BloomFilter {

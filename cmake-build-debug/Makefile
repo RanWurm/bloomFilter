@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/ran/Downloads/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake
+CMAKE_COMMAND = /home/ran/Desktop/Clion/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake
 
 # The command to remove a file.
-RM = /home/ran/Downloads/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake -E rm -f
+RM = /home/ran/Desktop/Clion/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/ran/CLionProjects/Projectpt1/cmake-build-debug
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/home/ran/Downloads/clion-2023.3.2/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process $(ARGS)
+	/home/ran/Desktop/Clion/clion-2023.3.2/bin/cmake/linux/x64/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -78,7 +78,7 @@ test/fast: test
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/home/ran/Downloads/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/ran/Desktop/Clion/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/home/ran/Downloads/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/ran/Desktop/Clion/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -187,6 +187,30 @@ tests/calc_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/calc_test.cpp.s
 .PHONY : tests/calc_test.cpp.s
 
+tests/filter_test.o: tests/filter_test.cpp.o
+.PHONY : tests/filter_test.o
+
+# target to build an object file
+tests/filter_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/filter_test.cpp.o
+.PHONY : tests/filter_test.cpp.o
+
+tests/filter_test.i: tests/filter_test.cpp.i
+.PHONY : tests/filter_test.i
+
+# target to preprocess a source file
+tests/filter_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/filter_test.cpp.i
+.PHONY : tests/filter_test.cpp.i
+
+tests/filter_test.s: tests/filter_test.cpp.s
+.PHONY : tests/filter_test.s
+
+# target to generate assembly for a file
+tests/filter_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/filter_test.cpp.s
+.PHONY : tests/filter_test.cpp.s
+
 tests/test_main.o: tests/test_main.cpp.o
 .PHONY : tests/test_main.o
 
@@ -227,6 +251,9 @@ help:
 	@echo "... tests/calc_test.o"
 	@echo "... tests/calc_test.i"
 	@echo "... tests/calc_test.s"
+	@echo "... tests/filter_test.o"
+	@echo "... tests/filter_test.i"
+	@echo "... tests/filter_test.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"

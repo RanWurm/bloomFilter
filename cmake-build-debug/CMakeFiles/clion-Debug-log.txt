@@ -1,4 +1,4 @@
-/home/ran/Downloads/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/ran/CLionProjects/Projectpt1 -B /home/ran/CLionProjects/Projectpt1/cmake-build-debug
+/home/ran/Desktop/Clion/clion-2023.3.2/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/ran/CLionProjects/Projectpt1 -B /home/ran/CLionProjects/Projectpt1/cmake-build-debug
 CMake Deprecation Warning:
   Support for "Extra Generators" like
 
@@ -8,7 +8,7 @@ CMake Deprecation Warning:
   use the cmake-file-api(7) to view CMake-generated project build trees.
 
 
-CMake Warning (dev) at /home/ran/Downloads/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FetchContent.cmake:1316 (message):
+CMake Warning (dev) at /home/ran/Desktop/Clion/clion-2023.3.2/bin/cmake/linux/x64/share/cmake-3.27/Modules/FetchContent.cmake:1316 (message):
   The DOWNLOAD_EXTRACT_TIMESTAMP option was not given and policy CMP0135 is
   not set.  The policy's OLD behavior will be used.  When using a URL
   download, the timestamps of extracted files should preferably be that of

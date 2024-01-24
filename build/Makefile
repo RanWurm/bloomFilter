@@ -127,72 +127,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CalcTests
+# Target rules for targets named FilterTests
 
 # Build rule for target.
-CalcTests: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CalcTests
-.PHONY : CalcTests
+FilterTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 FilterTests
+.PHONY : FilterTests
 
 # fast build rule for target.
-CalcTests/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/build
-.PHONY : CalcTests/fast
+FilterTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/build
+.PHONY : FilterTests/fast
 
-src/StandardHash.o: src/StandardHash.cpp.o
-.PHONY : src/StandardHash.o
-
-# target to build an object file
-src/StandardHash.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/src/StandardHash.cpp.o
-.PHONY : src/StandardHash.cpp.o
-
-src/StandardHash.i: src/StandardHash.cpp.i
-.PHONY : src/StandardHash.i
-
-# target to preprocess a source file
-src/StandardHash.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/src/StandardHash.cpp.i
-.PHONY : src/StandardHash.cpp.i
-
-src/StandardHash.s: src/StandardHash.cpp.s
-.PHONY : src/StandardHash.s
-
-# target to generate assembly for a file
-src/StandardHash.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/src/StandardHash.cpp.s
-.PHONY : src/StandardHash.cpp.s
-
-tests/calc_test.o: tests/calc_test.cpp.o
-.PHONY : tests/calc_test.o
+tests/filter_test.o: tests/filter_test.cpp.o
+.PHONY : tests/filter_test.o
 
 # target to build an object file
-tests/calc_test.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o
-.PHONY : tests/calc_test.cpp.o
+tests/filter_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/filter_test.cpp.o
+.PHONY : tests/filter_test.cpp.o
 
-tests/calc_test.i: tests/calc_test.cpp.i
-.PHONY : tests/calc_test.i
+tests/filter_test.i: tests/filter_test.cpp.i
+.PHONY : tests/filter_test.i
 
 # target to preprocess a source file
-tests/calc_test.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/calc_test.cpp.i
-.PHONY : tests/calc_test.cpp.i
+tests/filter_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/filter_test.cpp.i
+.PHONY : tests/filter_test.cpp.i
 
-tests/calc_test.s: tests/calc_test.cpp.s
-.PHONY : tests/calc_test.s
+tests/filter_test.s: tests/filter_test.cpp.s
+.PHONY : tests/filter_test.s
 
 # target to generate assembly for a file
-tests/calc_test.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/calc_test.cpp.s
-.PHONY : tests/calc_test.cpp.s
+tests/filter_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/filter_test.cpp.s
+.PHONY : tests/filter_test.cpp.s
 
 tests/test_main.o: tests/test_main.cpp.o
 .PHONY : tests/test_main.o
 
 # target to build an object file
 tests/test_main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/test_main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/test_main.cpp.o
 .PHONY : tests/test_main.cpp.o
 
 tests/test_main.i: tests/test_main.cpp.i
@@ -200,7 +176,7 @@ tests/test_main.i: tests/test_main.cpp.i
 
 # target to preprocess a source file
 tests/test_main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/test_main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/test_main.cpp.i
 .PHONY : tests/test_main.cpp.i
 
 tests/test_main.s: tests/test_main.cpp.s
@@ -208,7 +184,7 @@ tests/test_main.s: tests/test_main.cpp.s
 
 # target to generate assembly for a file
 tests/test_main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CalcTests.dir/build.make CMakeFiles/CalcTests.dir/tests/test_main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/tests/test_main.cpp.s
 .PHONY : tests/test_main.cpp.s
 
 # Help Target
@@ -220,13 +196,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... CalcTests"
-	@echo "... src/StandardHash.o"
-	@echo "... src/StandardHash.i"
-	@echo "... src/StandardHash.s"
-	@echo "... tests/calc_test.o"
-	@echo "... tests/calc_test.i"
-	@echo "... tests/calc_test.s"
+	@echo "... FilterTests"
+	@echo "... tests/filter_test.o"
+	@echo "... tests/filter_test.i"
+	@echo "... tests/filter_test.s"
 	@echo "... tests/test_main.o"
 	@echo "... tests/test_main.i"
 	@echo "... tests/test_main.s"

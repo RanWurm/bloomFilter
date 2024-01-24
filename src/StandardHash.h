@@ -5,18 +5,16 @@
 #ifndef PROJECT_PT1_STANDARDHASH_H
 #define PROJECT_PT1_STANDARDHASH_H
 
-#include <functional>
 #include "IHashCommand.h"
-
+using namespace std;
 class StandardHash : public IHashCommand{
 private:
-    std:: hash<std::string> myHash;
+    hash<string> myHash;
     int id;
 public:
-    StandardHash(std::hash<std::string>& hash, int id);
+    StandardHash(hash<string>& hash, int name);
 
-    size_t doHash(std::string s) override;
-    int getId();
+    size_t doHash(string s) override;
 };
 
 

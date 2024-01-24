@@ -2,8 +2,7 @@
 // Created by hillel on 1/17/24.
 //
 #include "BloomFilter.h"
-#include <list>
-using namespace std;
+
 
 BloomFilter::BloomFilter(int arraySize ,vector<int> hashNames) : bloomArray(nullptr), arraySize(0){
     setArray(arraySize);
@@ -34,12 +33,12 @@ void BloomFilter::putFlagInArray(string url) {
 
 int BloomFilter::getIndex(string url,StandardHash h) {
     string toIterate = to_string(h.doHash(url));
-    size_t index = (std::stoul(toIterate)) % arraySize;
+    size_t index = (stoul(toIterate)) % arraySize;
     return index;
 }
 
 //add to black list
-void BloomFilter::addToBlackList(std::string url) {
+void BloomFilter::addToBlackList(string url) {
     //first we need to put a flag in the array, flag is 0 or 1
     putFlagInArray(url);
     //we check if we already put this url in the black list,if not we put it
@@ -51,7 +50,7 @@ void BloomFilter::addToBlackList(std::string url) {
 }
 
 //this will check if false positive
-bool BloomFilter::isBlackListed(std::string url) {
+bool BloomFilter::isBlackListed(string url) {
     if(blackList.empty()){
         return false;
     }else{
@@ -64,7 +63,7 @@ bool BloomFilter::isBlackListed(std::string url) {
     }
 }
 
-void BloomFilter::printIfBlackListed(std::string url) {
+void BloomFilter::printIfBlackListed(string url) {
     for (int i = 0; i < hashFunctions.size(); i++){
         int index = getIndex(url,hashFunctions[i]);
         if( bloomArray[index] == 0 ){

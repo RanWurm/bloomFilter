@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CalcTests.dir/src/StandardHash.cpp.o.d"
   "CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o"
   "CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o.d"
+  "CMakeFiles/CalcTests.dir/tests/filter_test.cpp.o"
+  "CMakeFiles/CalcTests.dir/tests/filter_test.cpp.o.d"
   "CMakeFiles/CalcTests.dir/tests/test_main.cpp.o"
   "CMakeFiles/CalcTests.dir/tests/test_main.cpp.o.d"
   "CalcTests"

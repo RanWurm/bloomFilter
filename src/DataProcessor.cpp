@@ -26,16 +26,16 @@ std::vector <std::string> DataProcessor:: getSeparatedStrings (std::string& inpu
 	return seperatedInput;
 }
 
-int DataProcessor:: convertToInt(string s) {
+int DataProcessor:: convertToInt(std::string str) {
     int x = -1;
     try {
-        int x = std::stoi(s);
+        x = std::stoi(str);
         return x;
     } catch (const std::invalid_argument &e) {
         return x;
     } catch (const std::out_of_range &e) {
         return x;
-    } catch (const exception &e){
+    } catch (const std::exception& e){
         return x;
     }
 }
@@ -43,7 +43,7 @@ int DataProcessor:: convertToInt(string s) {
 std::vector<int> DataProcessor:: getVectorOfInts(std::vector<std::string> strings){
 	std::vector<int> ints;
 	for(int i = 0; i<strings.size(); i++){
-        int tmp = convertToInt(strings[i]);
+        int tmp =(int)convertToInt(strings[i]);
         if (tmp == -1){
             ints.clear();
             return ints;
