@@ -21,6 +21,7 @@ public:
 	std::vector <std::string> getSeparatedStrings(std::string& input, char delim);
 	std::vector<int> getVectorOfInts(std::vector<std::string> strings);
     void clearData();
+    int convertToInt(string s);
 	
 };
 

@@ -13,8 +13,9 @@ void App::run() {
 	vector<string> seperatedWords;
 	string tmpDataForBloom;
 	vector<int> valuesForBloom;
-	
-	//this get data from user via processor,and loop until the data is valid
+    int arrSize = 0;
+
+    //this get data from user via processor,and loop until the data is valid
 	while(!validInit) {
 		//this clears the vector in case on invalid input
 		seperatedWords.clear();
@@ -29,7 +30,8 @@ void App::run() {
 		valuesForBloom = processor.getVectorOfInts(seperatedWords);
 		validInit = auth.initAuthi(valuesForBloom);
 	}
-    int arrSize = valuesForBloom[0];
+    arrSize = valuesForBloom[0];
+
     seperatedWords.erase(seperatedWords.begin());
     vector<int> bloomInts = processor.getVectorOfInts(seperatedWords);
     BloomFilter myBloom = BloomFilter(arrSize,bloomInts);
@@ -40,7 +42,10 @@ void App::run() {
 		//this in the first data
 		tmpDataForBloom = processor.getUserDate();
 		vector<string> seperatedUrl = processor.getSeparatedStrings(tmpDataForBloom, ' ');
-        int form = stoi(seperatedUrl[0]);
+        if(seperatedUrl.empty()){
+            continue;
+        }
+        int form = processor.convertToInt(seperatedUrl[0]);
         seperatedUrl.erase(seperatedUrl.begin());
 		//this will check if the input is valid
 		if(auth.formAuth(form,(int)seperatedUrl.size())){
@@ -52,7 +57,5 @@ void App::run() {
                 continue;
             }
 		}
-        tmpDataForBloom.clear();
-        seperatedUrl.clear();
 	}
 }
