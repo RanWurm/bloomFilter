@@ -1,0 +1,4 @@
+/home/ran/CLionProjects/Projectpt1/build/CMakeFiles/CalcTests.dir
+/home/ran/CLionProjects/Projectpt1/build/CMakeFiles/test.dir
+/home/ran/CLionProjects/Projectpt1/build/CMakeFiles/edit_cache.dir
+/home/ran/CLionProjects/Projectpt1/build/CMakeFiles/rebuild_cache.dir

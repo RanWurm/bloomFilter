@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/CalcTests.dir/tests/test_main.cpp.o CMakeFiles/CalcTests.dir/tests/calc_test.cpp.o CMakeFiles/CalcTests.dir/src/StandardHash.cpp.o -o CalcTests  -lgtest -lgtest_main 
