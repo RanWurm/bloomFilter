@@ -11,10 +11,10 @@
 #include <vector>
 #include <iostream>
 
-class dumAuthinticator {
+class Authenticator {
 public:
-	dumAuthinticator();
-	bool initAuthi(std::vector<int> s);
+	Authenticator();
+	bool initAuthi(int vecSize);
     bool formAuth(int form,int vectorSize);
 };
 

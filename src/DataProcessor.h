@@ -16,6 +16,7 @@ private:
 	std::string s;
 
 public:
+    DataProcessor();
 	void collectUserData();
 	std::string getUserDate();
 	std::vector <std::string> getSeparatedStrings(std::string& input, char delim);

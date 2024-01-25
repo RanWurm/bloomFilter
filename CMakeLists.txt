@@ -14,9 +14,11 @@ set(SOURCE_FILES
         # this is where the code we want to test
         src/App.cpp
         src/BloomFilter.cpp
-        src/dumAuthinticator.cpp
+        src/Authenticator.cpp
         src/DataProcessor.cpp
         src/StandardHash.cpp
+        src/BloomInitializer.cpp
+        src/BloomOperator.cpp
 )
 set(TEST_FILES
 #        tests/test_main.cpp # this is the main for tests

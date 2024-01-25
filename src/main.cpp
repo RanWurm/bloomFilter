@@ -3,11 +3,13 @@
 //
 
 #include "App.h"
-//#include "dumAuthinticator.cpp"
 //#include "DataProcessor.cpp"
 //#include "BloomFilter.cpp"
 //#include "StandardHash.cpp"
 //#include "App.cpp"
+//#include "BloomInitializer.cpp"
+//#include "BloomOperator.cpp"
+//#include "Authenticator.cpp"
 int main(){
     App a = App();
     a.run();

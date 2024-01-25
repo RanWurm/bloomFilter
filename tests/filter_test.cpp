@@ -1,69 +1,48 @@
 #include <gtest/gtest.h>
 #include <iostream>
-#include <sstream>
-//#include "../src/DataProcessor.h"
-//#include "../src/App.h"
+#include "../src/DataProcessor.h"
+#include "../src/App.h"
 
 
-TEST(ExampleTest1, ExampleTest1) {
-    EXPECT_EQ(0,1);
+TEST(DataProccesor,Int){
+DataProcessor pro = DataProcessor();
+string data1 = "2";
+string data2 = "3";
+int iData1 = pro.convertToInt(data1);
+int iData2 = pro.convertToInt(data2);
+    EXPECT_EQ((iData1 + iData2),5);
 }
 
-TEST(ExampleTest2, ExampleTest2) {
-    EXPECT_EQ(1,1);
+TEST(InitAuthenticator,ValidInit){
+    Authenticator a = Authenticator();
+    EXPECT_TRUE(a.formAuth(1 ,1));
 }
 
-//TEST(ProcessInputTest, ExampleTest) {
-    // Redirect standard input
-//    std::istringstream input("8 2 1\n1 url1\n2 url2\n");
-//    std::cin.rdbuf(input.rdbuf());
-    // Redirect standard output
-//    std::stringstream output;
-//    std::cout.rdbuf(output.rdbuf());
+TEST(InitAuthenticator,InValidInit){
+    Authenticator a = Authenticator();
+    EXPECT_FALSE(a.initAuthi(-1));
+}
 
-    // Call the function to be tested
-//    App a = App();
-//    a.run();
+TEST(UrlTestAndForm,Valid_Form_And_Url){
+    Authenticator a = Authenticator();
+    EXPECT_TRUE(a.formAuth(1,1));
+    EXPECT_TRUE(a.formAuth(2,1));
+}
 
-    // Check the output against the expected result
-//    EXPECT_EQ(output.str(), "false\n");
-//}
-
-//
-//
-//TEST(HashTest,Constructor){
-//    std::hash<std::string> s;
-//    int id;
-//    ASSERT_NO_THROW(StandardHash hash(s , id));
-//}
-//
-//TEST(DoHash, Data) {
-//    std::hash<std::string> h ;
-//    int  id = 6;
-//    std::string str = "sdsa";
-//    StandardHash hash = StandardHash(h, id);
-//    EXPECT_NO_THROW(hash.doHash(str));
-//}
-//
-//TEST(convertVector,Proccse){
-//    DataProcessor p = DataProcessor();
-//    std::vector<string> s = {"sa","11"};
-//    ASSERT_ANY_THROW(p.getVectorOfInts(s));
-//}
-//
-//
-//TEST(convertVector,Proccsor){
-//    DataProcessor p = DataProcessor();
-//    std::vector<string> s = {"8","1","2"};
-//    ASSERT_NO_THROW(p.getVectorOfInts(s));
-//}
-//
+TEST(UrlTestAndFrom,InValid_Form_And_Url){
+    Authenticator a = Authenticator();
+    EXPECT_FALSE(a.formAuth(2,2));
+    EXPECT_FALSE(a.formAuth(0,2));
+    EXPECT_FALSE(a.formAuth(1,0));
+    EXPECT_FALSE(a.formAuth(1,2));
+    EXPECT_FALSE(a.formAuth(2,0));
+}
 
 int main(int argc, char** argv)
 {
     int ret;
     testing::InitGoogleTest(&argc, argv);
     ret = RUN_ALL_TESTS();
-    std::getchar(); // keep console window open until Return keystroke
+    //std::getchar(); // keep console window open until Return keystroke
     return ret;
 }

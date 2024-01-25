@@ -4,6 +4,8 @@ WORKDIR /app
 COPY ./src ./src
 COPY ./tests ./tests
 COPY CMakeLists.txt .
+COPY newfile.cmake .
+
 
 # Install necessary dependencies (e.g., Google Test, CMake)
 RUN apt-get update && \

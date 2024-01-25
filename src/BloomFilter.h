@@ -18,7 +18,7 @@ private:
 
 
 public:
-    BloomFilter(int arraySize,vector<int> hashFunctions);
+    BloomFilter(int arraySize,vector<int>& hashFunctions);
     ~BloomFilter();
 
     void setArray(int newSize);

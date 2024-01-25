@@ -4,8 +4,7 @@
 #include "BloomFilter.h"
 
 
-BloomFilter::BloomFilter(int arraySize ,vector<int> hashNames) : bloomArray(nullptr), arraySize(0){
-    setArray(arraySize);
+BloomFilter::BloomFilter(int arraySize ,vector<int>& hashNames) : bloomArray(nullptr), arraySize(arraySize){
     setHashArray(hashNames);
 }
 

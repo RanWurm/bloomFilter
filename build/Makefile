@@ -179,6 +179,33 @@ src/App.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/App.cpp.s
 .PHONY : src/App.cpp.s
 
+src/Authenticator.o: src/Authenticator.cpp.o
+.PHONY : src/Authenticator.o
+
+# target to build an object file
+src/Authenticator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/Authenticator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/Authenticator.cpp.o
+.PHONY : src/Authenticator.cpp.o
+
+src/Authenticator.i: src/Authenticator.cpp.i
+.PHONY : src/Authenticator.i
+
+# target to preprocess a source file
+src/Authenticator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/Authenticator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/Authenticator.cpp.i
+.PHONY : src/Authenticator.cpp.i
+
+src/Authenticator.s: src/Authenticator.cpp.s
+.PHONY : src/Authenticator.s
+
+# target to generate assembly for a file
+src/Authenticator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/Authenticator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/Authenticator.cpp.s
+.PHONY : src/Authenticator.cpp.s
+
 src/BloomFilter.o: src/BloomFilter.cpp.o
 .PHONY : src/BloomFilter.o
 
@@ -205,6 +232,60 @@ src/BloomFilter.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomFilter.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomFilter.cpp.s
 .PHONY : src/BloomFilter.cpp.s
+
+src/BloomInitializer.o: src/BloomInitializer.cpp.o
+.PHONY : src/BloomInitializer.o
+
+# target to build an object file
+src/BloomInitializer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomInitializer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomInitializer.cpp.o
+.PHONY : src/BloomInitializer.cpp.o
+
+src/BloomInitializer.i: src/BloomInitializer.cpp.i
+.PHONY : src/BloomInitializer.i
+
+# target to preprocess a source file
+src/BloomInitializer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomInitializer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomInitializer.cpp.i
+.PHONY : src/BloomInitializer.cpp.i
+
+src/BloomInitializer.s: src/BloomInitializer.cpp.s
+.PHONY : src/BloomInitializer.s
+
+# target to generate assembly for a file
+src/BloomInitializer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomInitializer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomInitializer.cpp.s
+.PHONY : src/BloomInitializer.cpp.s
+
+src/BloomOperator.o: src/BloomOperator.cpp.o
+.PHONY : src/BloomOperator.o
+
+# target to build an object file
+src/BloomOperator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomOperator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomOperator.cpp.o
+.PHONY : src/BloomOperator.cpp.o
+
+src/BloomOperator.i: src/BloomOperator.cpp.i
+.PHONY : src/BloomOperator.i
+
+# target to preprocess a source file
+src/BloomOperator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomOperator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomOperator.cpp.i
+.PHONY : src/BloomOperator.cpp.i
+
+src/BloomOperator.s: src/BloomOperator.cpp.s
+.PHONY : src/BloomOperator.s
+
+# target to generate assembly for a file
+src/BloomOperator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/BloomOperator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/BloomOperator.cpp.s
+.PHONY : src/BloomOperator.cpp.s
 
 src/DataProcessor.o: src/DataProcessor.cpp.o
 .PHONY : src/DataProcessor.o
@@ -259,33 +340,6 @@ src/StandardHash.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/StandardHash.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/StandardHash.cpp.s
 .PHONY : src/StandardHash.cpp.s
-
-src/dumAuthinticator.o: src/dumAuthinticator.cpp.o
-.PHONY : src/dumAuthinticator.o
-
-# target to build an object file
-src/dumAuthinticator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/dumAuthinticator.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/dumAuthinticator.cpp.o
-.PHONY : src/dumAuthinticator.cpp.o
-
-src/dumAuthinticator.i: src/dumAuthinticator.cpp.i
-.PHONY : src/dumAuthinticator.i
-
-# target to preprocess a source file
-src/dumAuthinticator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/dumAuthinticator.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/dumAuthinticator.cpp.i
-.PHONY : src/dumAuthinticator.cpp.i
-
-src/dumAuthinticator.s: src/dumAuthinticator.cpp.s
-.PHONY : src/dumAuthinticator.s
-
-# target to generate assembly for a file
-src/dumAuthinticator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterTests.dir/build.make CMakeFiles/FilterTests.dir/src/dumAuthinticator.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/FilterApp.dir/build.make CMakeFiles/FilterApp.dir/src/dumAuthinticator.cpp.s
-.PHONY : src/dumAuthinticator.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
@@ -349,18 +403,24 @@ help:
 	@echo "... src/App.o"
 	@echo "... src/App.i"
 	@echo "... src/App.s"
+	@echo "... src/Authenticator.o"
+	@echo "... src/Authenticator.i"
+	@echo "... src/Authenticator.s"
 	@echo "... src/BloomFilter.o"
 	@echo "... src/BloomFilter.i"
 	@echo "... src/BloomFilter.s"
+	@echo "... src/BloomInitializer.o"
+	@echo "... src/BloomInitializer.i"
+	@echo "... src/BloomInitializer.s"
+	@echo "... src/BloomOperator.o"
+	@echo "... src/BloomOperator.i"
+	@echo "... src/BloomOperator.s"
 	@echo "... src/DataProcessor.o"
 	@echo "... src/DataProcessor.i"
 	@echo "... src/DataProcessor.s"
 	@echo "... src/StandardHash.o"
 	@echo "... src/StandardHash.i"
 	@echo "... src/StandardHash.s"
-	@echo "... src/dumAuthinticator.o"
-	@echo "... src/dumAuthinticator.i"
-	@echo "... src/dumAuthinticator.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -1,5 +1,7 @@
 #include "DataProcessor.h"
 
+DataProcessor::DataProcessor() = default;
+
 void DataProcessor::collectUserData() {
 	std::string userInput;
 	getline(std::cin,userInput);
