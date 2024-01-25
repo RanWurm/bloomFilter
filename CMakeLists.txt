@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project("Project_pt1") # Replace “MyCalc” with your repo name
+project("Projectpt1") # Replace “MyCalc” with your repo name
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 include(FetchContent)
@@ -11,16 +11,25 @@ FetchContent_Declare(
 )
 enable_testing()
 set(SOURCE_FILES
-        src/calc.cpp # this is where the code we want to test
+        # this is where the code we want to test
+        src/App.cpp
+        src/BloomFilter.cpp
+        src/Authenticator.cpp
+        src/DataProcessor.cpp
+        src/StandardHash.cpp
+        src/BloomInitializer.cpp
+        src/BloomOperator.cpp
 )
 set(TEST_FILES
-        tests/test_main.cpp # this is the main for tests
-        tests/calc_test.cpp # this file contain the tests
+#        tests/test_main.cpp # this is the main for tests
+        tests/filter_test.cpp
+        # this file contain the tests
 )
-add_executable(CalcTests ${TEST_FILES})
+add_executable(FilterTests ${SOURCE_FILES} ${TEST_FILES})
+add_executable(FilterApp src/main.cpp ${SOURCE_FILES})
 # Link Google Test to the test executable
-target_link_libraries(CalcTests PRIVATE gtest gtest_main)
+target_link_libraries(FilterTests PRIVATE gtest)
 # Include the source directory for tests
-target_include_directories(CalcTests PRIVATE src)
+target_include_directories(FilterTests PRIVATE src)
 include(GoogleTest)
-add_test(NAME CalcTests COMMAND CalcTests)
+add_test(NAME FilterTests COMMAND FilterTests)

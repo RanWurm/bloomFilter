@@ -2,8 +2,8 @@
 // Created by user on 1/18/2024.
 //
 
-#ifndef PROJECT_PT1_DATAPROCESSOR_H
-#define PROJECT_PT1_DATAPROCESSOR_H
+#ifndef PROJECTPT1_DATAPROCESSOR_H
+#define PROJECTPT1_DATAPROCESSOR_H
 
 
 #include <string>
@@ -16,10 +16,13 @@ private:
 	std::string s;
 
 public:
+    DataProcessor();
 	void collectUserData();
 	std::string getUserDate();
-	std::vector <std::string> getSeperatedStrings(std::string& input, char delim);
+	std::vector <std::string> getSeparatedStrings(std::string& input, char delim);
 	std::vector<int> getVectorOfInts(std::vector<std::string> strings);
+    void clearData();
+    int convertToInt(std::string str);
 	
 };
 

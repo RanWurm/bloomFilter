@@ -1,0 +1,19 @@
+Start testing: Jan 25 00:05 IST
+----------------------------------------------------------
+Unable to find executable: FilterTests
+1/1 Testing: NAME
+1/1 Test: NAME
+Command: "" "COMMAND" "FilterTests"
+Directory: /home/ran/CLionProjects/Projectpt1
+"NAME" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NAME" end time: Jan 25 00:05 IST
+"NAME" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 25 00:05 IST
