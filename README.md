@@ -21,12 +21,12 @@ This project follows the Red-Green-Refactor methodology and Test-Driven Developm
 **Green**: Write the minimum code to make the test pass.
 **Refactor**: Clean up the code while ensuring the test still passes.
 ## Testing and CI/CD
-# 4. Docker and GitHub Workflow
+### 4. Docker and GitHub Workflow
 A Docker file has been added to the project for running tests. Additionally, a GitHub workflow has been set up to utilize this Docker container and automatically run tests on every pull request.
 
-# 5. Jira Integration
+### 5. Jira Integration
 The project tasks and workflow were managed using Jira. This helped in organizing and tracking progress efficiently.
 
 ## Refactoring for Improved Project Management
-# 6. Class Refactoring
+### 6. Class Refactoring
 In order to enhance project manageability and error detection, the code underwent refactoring. This involved dividing a monolithic class into several classes. This restructuring not only provides better control over the project but also improves code readability, making it more understandable.
