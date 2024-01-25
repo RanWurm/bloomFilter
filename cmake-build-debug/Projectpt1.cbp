@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Projectpt1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ran/CLionProjects/Projectpt1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FilterTests">
+				<Option output="/home/ran/CLionProjects/Projectpt1/cmake-build-debug/FilterTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ran/CLionProjects/Projectpt1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ran/CLionProjects/Projectpt1/src"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 FilterTests"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FilterTests/fast">
+				<Option output="/home/ran/CLionProjects/Projectpt1/cmake-build-debug/FilterTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ran/CLionProjects/Projectpt1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/ran/CLionProjects/Projectpt1/src"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 FilterTests/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FilterApp">
+				<Option output="/home/ran/CLionProjects/Projectpt1/cmake-build-debug/FilterApp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ran/CLionProjects/Projectpt1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 FilterApp"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FilterApp/fast">
+				<Option output="/home/ran/CLionProjects/Projectpt1/cmake-build-debug/FilterApp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ran/CLionProjects/Projectpt1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 FilterApp/fast"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="/home/ran/CLionProjects/Projectpt1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ran/CLionProjects/Projectpt1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ran/CLionProjects/Projectpt1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j4 -f &quot;/home/ran/CLionProjects/Projectpt1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/App.cpp">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/App.h">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/Authenticator.cpp">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/Authenticator.h">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/BloomFilter.cpp">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/BloomFilter.h">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/BloomInitializer.cpp">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/BloomInitializer.h">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/BloomOperator.cpp">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/BloomOperator.h">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/DataProcessor.cpp">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/DataProcessor.h">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/StandardHash.cpp">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/StandardHash.h">
+			<Option target="FilterTests"/>
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/src/main.cpp">
+			<Option target="FilterApp"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/tests/filter_test.cpp">
+			<Option target="FilterTests"/>
+		</Unit>
+		<Unit filename="/home/ran/CLionProjects/Projectpt1/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

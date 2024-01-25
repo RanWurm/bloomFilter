@@ -27,13 +27,11 @@ cmake -B build -S .
 # Build the C++ code and tests
 RUN cmake --build build
 
-RUN g++ -o Projectpt1  ./src/main.cpp ./src/StandardHash.cpp ./src/Authenticator.cpp ./src/DataProcessor.cpp ./src/BloomFilter.cpp ./src/App.cpp ./src/BloomInitializer.cpp ./src/BloomOperator.cpp
 
 # Run the tests using ctest
 CMD ["ctest", "--test-dir", "build", "--output-on-failure"]
 
 
-CMD ["./Projectpt1"]
 
 
 
