@@ -2,8 +2,8 @@
 // Created by ran on 1/23/24.
 //
 
-#ifndef PROJECT_PT1_STANDARDHASH_H
-#define PROJECT_PT1_STANDARDHASH_H
+#ifndef PROJECTPT1_STANDARDHASH_H
+#define PROJECTPT1_STANDARDHASH_H
 
 #include "IHashCommand.h"
 using namespace std;

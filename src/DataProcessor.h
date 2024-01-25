@@ -2,8 +2,8 @@
 // Created by user on 1/18/2024.
 //
 
-#ifndef PROJECT_PT1_DATAPROCESSOR_H
-#define PROJECT_PT1_DATAPROCESSOR_H
+#ifndef PROJECTPT1_DATAPROCESSOR_H
+#define PROJECTPT1_DATAPROCESSOR_H
 
 
 #include <string>

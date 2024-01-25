@@ -43,6 +43,6 @@ int main(int argc, char** argv)
     int ret;
     testing::InitGoogleTest(&argc, argv);
     ret = RUN_ALL_TESTS();
-    //std::getchar(); // keep console window open until Return keystroke
+    std::getchar(); // keep console window open until Return keystroke
     return ret;
 }

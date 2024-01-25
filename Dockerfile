@@ -4,7 +4,7 @@ WORKDIR /app
 COPY ./src ./src
 COPY ./tests ./tests
 COPY CMakeLists.txt .
-COPY newfile.cmake .
+COPY CTestTestfile.cmake .
 
 
 # Install necessary dependencies (e.g., Google Test, CMake)
@@ -27,12 +27,13 @@ cmake -B build -S .
 # Build the C++ code and tests
 RUN cmake --build build
 
+RUN g++ -o Projectpt1  ./src/main.cpp ./src/StandardHash.cpp ./src/Authenticator.cpp ./src/DataProcessor.cpp ./src/BloomFilter.cpp ./src/App.cpp ./src/BloomInitializer.cpp ./src/BloomOperator.cpp
 
 # Run the tests using ctest
 CMD ["ctest", "--test-dir", "build", "--output-on-failure"]
 
 
-CMD ["./Project_pt1"]
+CMD ["./Projectpt1"]
 
 
 

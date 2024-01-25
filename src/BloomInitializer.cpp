@@ -40,3 +40,4 @@ void BloomInitializer:: setInitials(){
 BloomFilter BloomInitializer::getInitalizedBloom() {
     return BloomFilter(arrSize,names);
 }
+

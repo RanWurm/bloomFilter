@@ -2,8 +2,8 @@
 // Created by ran on 1/23/24.
 //
 
-#ifndef PROJECT_PT1_IHASHCOMMAND_H
-#define PROJECT_PT1_IHASHCOMMAND_H
+#ifndef PROJECTPT1_IHASHCOMMAND_H
+#define PROJECTPT1_IHASHCOMMAND_H
 #include <string>
 
 class IHashCommand{

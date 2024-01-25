@@ -2,8 +2,8 @@
 // Created by hillel on 1/22/24.
 //
 
-#ifndef PROJECT_PT1_BLOOMFILTER_H
-#define PROJECT_PT1_BLOOMFILTER_H
+#ifndef PROJECTPT1_BLOOMFILTER_H
+#define PROJECTPT1_BLOOMFILTER_H
 #include <vector>
 #include "StandardHash.h"
 #include <iostream>

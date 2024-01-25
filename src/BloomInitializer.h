@@ -11,12 +11,16 @@
 
 class BloomInitializer : public Initializer{
 private:
-    int arrSize{};
+    int arrSize;
     std::vector<int> names;
 public:
     BloomInitializer();
     void setInitials() override;
     BloomFilter getInitalizedBloom();
+    int getArrSize();
+    std::vector<int> getnames();
+
+
 };
 
 
