@@ -13,7 +13,12 @@ void App::run() {
     bInitials.setInitials();
 
     //this is the project bloom filter
-    BloomFilter myBloom = bInitials.getInitalizedBloom();
+    //BloomFilter myBloom = bInitials.getInitalizedBloom();
+    int size = bInitials.getArrSize();
+    std::vector<int> names = bInitials.getNames();
+    BloomFilter myBloom = BloomFilter(size,names);
+
     // this is the endless loop where the user enter the data
-    BloomOperator(true,myBloom);
+    BloomOperator(true,myBloom).operate();
+
 }

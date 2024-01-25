@@ -41,3 +41,10 @@ BloomFilter BloomInitializer::getInitalizedBloom() {
     return BloomFilter(arrSize,names);
 }
 
+int BloomInitializer::getArrSize() {
+    return arrSize;
+}
+
+std::vector<int> BloomInitializer::getNames() {
+    return names;
+}

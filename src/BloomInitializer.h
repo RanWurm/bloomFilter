@@ -18,7 +18,7 @@ public:
     void setInitials() override;
     BloomFilter getInitalizedBloom();
     int getArrSize();
-    std::vector<int> getnames();
+    std::vector<int> getNames();
 
 
 };
